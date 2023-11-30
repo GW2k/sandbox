@@ -13,7 +13,7 @@ You are encouraged to use the provided naming convention for ease of review.
 
 let rModel = document.getElementById("model-text");
 let duration = document.getElementById("duration-text");
-
+let chosenDuration;
 
 /****************** helper function ******************/
 /* create a function called recalculate() which will
@@ -28,15 +28,14 @@ let duration = document.getElementById("duration-text");
 // INSERT YOUR CODE HERE
 
 function recalculate(){
-    console.log("Recalculating!")
-    let costLabel = document.getElementById("calculated-cost")
+    let costLabel = document.getElementById("calculated-cost");
     if(rModel.textContent == "Model XYZ"){
         let newCost = duration.textContent * 100;
-        costLabel.textContent = newCost
+        costLabel.textContent = newCost;
     }
     else if(rModel.textContent == "Model CPRG"){
         let newCost = duration.textContent * 213;
-        costLabel.textContent = newCost
+        costLabel.textContent = newCost;
     }
 }
 
